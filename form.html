@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <form action="" method="post">
+            <h3>form-label, form-control, form-text</h3>
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" id="username" class="form-control">
+
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control">
+
+            <div class="form-text">
+                Your password must be at least 8 characters long.
+            </div>
+            <br>
+            <hr>
+
+            <h3>form-select</h3>
+            <label for="field" class="form-label">Career Field</label>
+            <select name="field" id="field" class="form-select">
+                <option value="" hidden>Select a Career Field</option>
+                <option value="">Engineering</option>
+                <option value="">Medicine</option>
+                <option value="">IT</option>
+            </select>
+            <br>
+            <hr>
+
+            <h3>form-check, form-check-input, form-check-label</h3>
+            <div class="form-check">
+                <input type="checkbox" name="agree" id="agree" class="form-check-input">
+                <label for="agree" class="form-check-label">
+                    I agree to the terms of service.
+                </label>
+            </div>
+            <br>
+            <hr>
+
+            <h3>Radions Inline, form-check-inline</h3>
+            <div class="form-check-inline">
+                <input type="radio" name="yes_no" id="yes" class="form-check-input">
+                <label for="yes" class="form-check-label">Yes</label>
+            </div>
+
+            <div class="form-check-inline">
+                <input type="radio" name="yes_no" id="no" class="form-check-input">
+                <label for="no" class="form-check-label">No</label>
+            </div>
+            <br>
+            <hr>
+
+            <h3>Form Control Sizing</h3>
+            <input type="text" name="" placeholder="first_name" id="" class="form-control form-control-lg">
+        </form>
+    </div>
+    
+</body>
+</html>
